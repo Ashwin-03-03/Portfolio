@@ -1,0 +1,230 @@
+* {
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.container {
+    width: 100%;
+    height: 100vh; /* 1vh = 19.2px */
+    position: relative;
+    background-color: rgb(255, 255, 255); 
+}
+.navbar {
+    display: flex; /* Display is given as flex for giving content side by side of the image*/
+    justify-content: space-between; /* Giving space b/w elements */
+    width: 85%;
+    margin-left: 3%;
+    margin-top: 2%;
+    align-items: center;
+}
+.logo {
+    width: 130px;
+}
+.list-item {
+    display: inline-block; /* to display the content in one line */
+    margin: 10px 20px;
+}
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.links:hover {
+    color: red;
+}
+.title {
+    margin-left: 8%;
+    margin-top: 13%;
+
+}
+.title-h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastName {
+    color: orange;
+}
+.title-p {
+    margin-bottom: 20px;
+}
+.download {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    
+}
+.images {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover #shape {
+    bottom: 70px;
+}
+.images:hover #girl {
+        left: 40%;
+}
+
+#about {
+    margin: 15% 8% 0 8%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+.heading span {
+    color: green;
+    font-size: 20px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 2rem;  
+}
+.about-details p {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.info-box {
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.about-image img {
+    width: 80%;
+    border-radius: 1rem;
+}
+.info-box span {
+    margin-left: 10px;
+}
+
+#skills {
+    margin: 5% 5% 0 5%;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 5%;
+}
+
+.skill-image img {
+    width: 90%;
+    padding-left: 4rem;
+    margin-top: 0%;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html-bar {
+    background-color: orange;
+    width: 95%;
+}
+.css-bar {
+    background-color: orange;
+    width: 88%;
+}
+.js-bar {
+    background-color: orange;
+    width: 89%;
+}
+.react-bar {
+    background-color: orange;
+    width: 85%;
+}
+
+.icons {
+    margin-top: 20px;
+
+}
+
+.icons span {   
+   padding-left: 20px;
+}
+
+.footer-sentence {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+.up-arrow {
+    color: orange;
+}
+.up-arrow-div {
+    margin-top: 20px;
+    margin-left: 95%;
+}
+
+.up-arrow:hover {
+    color: blue;
+}
+
+.icons :hover {
+   color: white;
+   animation: shake 0.75s;
+}
+
+.linkedin {
+    width: 500px;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+
+
+
+.linkedin {
+    background-image: linear-gradient(to bottom right,  yellow, red);   
+}
+
+@keyframes shake {
+    20% {transform: rotate(-15deg); color: purple;}
+    40% {transform: rotate(15deg); color: purple;}
+    60% {transform: rotate(-15deg);}
+    80% {transform: rotate(15deg);}
+    100% {transform: rotate(-15deg);}
+}
+
